@@ -1,5 +1,5 @@
 
-        <div class="grid_2 navbar-fixed-bottom"> 
+        <div class="grid_2"> 
             <ul id="footer-links">
                     <li><a href="/">Home</a></li>
                 <?php if ($session->isUserLoggedIn() === true): ?>
