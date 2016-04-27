@@ -9,19 +9,20 @@ Goal of the project is not to reinvent the wheel but the learning of programming
 using the best practices of OOP paradigm. It is long, sometimes frustrating process but in the end very worthwhile. Therefore 
 the most of functionalities are created from scratch. 
 The application's base functionalities are:
-    *  register new user
-	*  log in and log out the user
-	*  uploading the image 
-	*  view and comment the image
-	*  view the profile
-	*  edit the profile info
-	*  edit the image info
-	*  send the email to the administrator using the contact form
+
+    -  register new user
+	-  log in and log out the user
+	-  uploading the image 
+	-  view and comment the image
+	-  view the profile
+	-  edit the profile info
+	-  edit the image info
+	-  send the email to the administrator using the contact form
 	
 Future modules which will be added: 
-    *  browsing images by categories
-	*  rating system of the image
-	*  user following system 
-	*  user experience improvement using javascript
+    -  browsing images by categories
+	-  rating system of the image
+	-  user following system 
+	-  user experience improvement using javascript
 
 
