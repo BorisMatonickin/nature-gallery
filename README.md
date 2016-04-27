@@ -20,6 +20,7 @@ The application's base functionalities are:
 	-  send the email to the administrator using the contact form
 	
 Future modules which will be added: 
+
     -  browsing images by categories
 	-  rating system of the image
 	-  user following system 
