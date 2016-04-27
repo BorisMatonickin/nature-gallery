@@ -25,5 +25,20 @@ Future modules which will be added:
 	-  rating system of the image
 	-  user following system 
 	-  user experience improvement using javascript
+	
+Mysqldump sql file with some prepopulated data for testing is included in the database folder. All users have the same password 
+which is simply PASSWORD. In the config file database connection parameters should be changed to your environment. 
+Application is developed on localhost and setted up as virtual host with URL http://nature.dev 
+
+ ```
+
+<VirtualHost nature.dev:80>
+    ServerAdmin admin@nature.dev
+    DocumentRoot "c:\\wamp\\www\\nature_gallery\\webroot\\"
+    ServerName nature.dev
+    ServerAlias nature.dev www.nature.dev
+</VirtualHost> 
+
+ ```
 
 
