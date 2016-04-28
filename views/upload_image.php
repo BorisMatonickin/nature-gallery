@@ -1,7 +1,7 @@
 <div class="grid_1">
     <div class="contact-form">
         <h3>Upload New Image:</h3>
-        <form action="" method="post" role="form" enctype="multipart/form-data">
+        <form action="" method="post" role="form" enctype="multipart/form-data" autocomplete="off">
             <div class="form-group">
                 <label for="caption">Image Title:</label>
                 <input type="text" class="form-control" name="caption" id="caption" placeholder="Enter Image Title" value="<?= $input->getParam('caption'); ?>" />

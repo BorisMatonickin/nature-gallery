@@ -1,7 +1,7 @@
 <div class="grid_1">    
     <div class="contact-form">
         <h3>Contact Us: </h3>
-        <form action="" method="post" role="form">
+        <form action="" method="post" role="form" autocomplete="off">
             <div class="form-group">
                 <label for="name">Your Name:</label>
                 <input type="text" class="form-control" id="name" name="name" placeholder="Enter Name" value="<?= $input->getParam('name'); ?>" />

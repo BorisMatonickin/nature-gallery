@@ -5,7 +5,7 @@
     
     <div class="col-md-4">
         <h3>Edit Image Details:</h3>
-        <form action="" method="post" role="form">
+        <form action="" method="post" role="form" autocomplete="off">
             <div class="form-group">
                 <label for="caption">Image Title:</label>
                 <input type="text" class="form-control" name="caption" id="caption" 

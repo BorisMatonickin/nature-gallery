@@ -1,7 +1,7 @@
 <div class="col_1">
     <div class="contact-form">
         <h3>Edit Profile Info:</h3>
-        <form action="" method="post" role="form" enctype="multipart/form-data">
+        <form action="" method="post" role="form" enctype="multipart/form-data" autocomplete="off">
             <div class="form-group">
                 <label for="username">Username:</label>
                 <input type="text" class="form-control" id="username" name="username" 

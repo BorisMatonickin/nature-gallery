@@ -5,7 +5,7 @@
 
     <div class="contact-form">
         <h3>Login: </h3>
-        <form action="" method="post" role="form">
+        <form action="" method="post" role="form" autocomplete="off">
             <div class="form-group">
                 <label for="username">Username:</label>
                 <input type="text" class="form-control" id="username" name="username" placeholder="Enter Username" value="<?= $input->getParam('username') ?>" />
