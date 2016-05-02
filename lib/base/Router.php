@@ -38,12 +38,6 @@ class Router {
     private $pathParts = [];
     
     /**
-     * Special controller method prefix defined in configuration eg. if method 
-     *  refers to the special area of the application (admin etc.)
-     */
-    private $methodPrefix;
-    
-    /**
      * Optional URL param reserved for language of the application.
      */
     private $language;
@@ -65,7 +59,6 @@ class Router {
         // default settings
         $this->routes = $this->config->getSetting('routes');
         $this->route = $this->config->getSetting('defaultRoute');
-        $this->methodPrefix = (isset($this->routes[$this->route])) ? $this->routes[$this->route] : '';
         $this->language = $this->config->getSetting('defaultLanguage');
         $this->controller = $this->config->getSetting('defaultController');
         $this->action = $this->config->getSetting('defaultAction');
@@ -99,7 +92,6 @@ class Router {
     private function getRouteFromUri() {
         if (in_array(strtolower(current($this->pathParts)), array_keys($this->routes))) {
             $this->route = strtolower(current($this->pathParts));
-            $this->methodPrefix = (isset($this->routes[$this->route])) ? $this->routes[$this->route] : '';
             array_shift($this->pathParts);
         }
     }
@@ -161,10 +153,6 @@ class Router {
 
     public function getRoute() {
         return $this->route;
-    }
-
-    public function getMethodPrefix() {
-        return $this->methodPrefix;
     }
 
     public function getLanguage() {
