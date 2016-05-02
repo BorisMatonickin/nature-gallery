@@ -12,7 +12,7 @@ class Session {
      */
     public function init() {
         session_save_path(ROOT . DS . 'lib' . DS . 'base' . DS . 'session');
-		session_set_cookie_params(3600, '/', '', true, true);
+		session_set_cookie_params(3600, '/', '', false, true);
         session_start();
     }
     
