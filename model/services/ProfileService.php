@@ -88,7 +88,7 @@ class ProfileService {
      * @return boolean 
      */
     public function edit($userId, $sourceParams = []) {
-        $val = $this->validateOnEdit($sourceParams);
+        $val = $this->validateOnEdit($userId, $sourceParams);
         if ($val) {
             $validated = $this->validator->getValidated();
             $sanitizedId = $this->validateAndSanitizeUserId($userId);
@@ -149,11 +149,12 @@ class ProfileService {
     
     /**
      * Validate edit profile form data. Add unique rule to validation rules if user tries to change their username.
+	 * @param int $userId
      * @param array $sourceParams
      * @return boolean
      */
-    private function validateOnEdit($sourceParams = []) {
-        $userDetails = $this->getUserDetails($sourceParams['id']);
+    private function validateOnEdit($userId, $sourceParams = []) {
+        $userDetails = $this->getUserDetails($userId);
         $this->validator->addSource($sourceParams);
         $rules = $this->editProfileRules();
         $this->validator->addRules($rules);
