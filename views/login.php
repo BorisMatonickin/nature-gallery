@@ -13,7 +13,7 @@
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>
-                <input type="password" class="form-control" id="password" name="password" value="<?= $input->getParam('password'); ?>" />
+                <input type="password" class="form-control" id="password" name="password" value="<?= $input->getParam('password'); ?>"  autocomplete="off" />
                 <span class="text-danger"><?= isset($errors['password']) ? $errors['password'] : ''; ?></span>
             </div>
             <input type="hidden" name="token" value="<?= $token; ?>" />

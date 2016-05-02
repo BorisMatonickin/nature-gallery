@@ -14,12 +14,12 @@
             </div>
             <div class="form-group">
                 <label for="password">Password:</label>
-                <input type="password" class="form-control" id="password" name="password" value="<?= $input->getParam('password'); ?>" />
+                <input type="password" class="form-control" id="password" name="password" value="<?= $input->getParam('password'); ?>" autocomplete="off" />
                 <span class="text-danger"><?= isset($errors['password']) ? $errors['password'] : ''; ?></span>
             </div>
             <div class="form-group">
                 <label for="passwordConfirm">Confirm Password:</label>
-                <input type="password" class="form-control" id="passwordConfirm" name="passwordConfirm" value="<?= $input->getParam('passwordConfirm'); ?>" />
+                <input type="password" class="form-control" id="passwordConfirm" name="passwordConfirm" value="<?= $input->getParam('passwordConfirm'); ?>" autocomplete="off" />
                 <span class="text-danger"><?= isset($errors['passwordConfirm']) ? $errors['passwordConfirm'] : ''; ?></span>
             </div>
             <div class="form-group">
