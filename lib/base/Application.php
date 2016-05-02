@@ -34,7 +34,7 @@ class Application {
      */
     public function run() {       
         $controllerClass = ucfirst($this->router->getController()) . 'Controller';
-        $controllerMethod = strtolower($this->router->getMethodPrefix()) . $this->router->getAction();
+        $controllerMethod = $this->router->getAction();
         $this->setControllerObject($controllerClass, $controllerMethod);
     }
     
