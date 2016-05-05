@@ -7,13 +7,14 @@ can easily and fast grow up into big project and implementing DDD gives high ext
 [PHPMailer](https://github.com/PHPMailer/PHPMailer) and [Auryn](https://github.com/rdlowrey/auryn) dependency injector. 
 Goal of the project is not to reinvent the wheel but the learning of programming backend support from scratch for websites 
 using the best practices of OOP paradigm. It is long, sometimes frustrating process but in the end very worthwhile. Therefore 
-the most of functionalities are created from scratch. 
+the most of functionalities are created from scratch. The layout is simple because the emphasis is on the backup development learning.
 The application's base functionalities are:
 
     -  register new user
 	-  log in and log out the user
 	-  uploading the image 
 	-  view and comment the image
+	-  browsing images by categories
 	-  view the profile
 	-  edit the profile info
 	-  edit the image info
@@ -21,7 +22,6 @@ The application's base functionalities are:
 	
 Future modules which will be added: 
 
-    -  browsing images by categories
 	-  rating system of the image
 	-  user following system 
 	-  user experience improvement using javascript
