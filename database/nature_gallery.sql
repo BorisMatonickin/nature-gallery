@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Apr 27, 2016 at 11:37 PM
+-- Generation Time: May 05, 2016 at 07:34 PM
 -- Server version: 5.6.17
 -- PHP Version: 5.5.12
 
@@ -75,7 +75,7 @@ CREATE TABLE IF NOT EXISTS `comment` (
   PRIMARY KEY (`id`),
   KEY `fk_com_1` (`user_id`),
   KEY `fk_com_2` (`image_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=12 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=14 ;
 
 --
 -- Dumping data for table `comment`
@@ -92,7 +92,9 @@ INSERT INTO `comment` (`id`, `user_id`, `image_id`, `comment`, `created_at`, `up
 (8, 44, 26, 'Et harum quidem rerum facilis est et expedita distinctio.', '2016-03-17 16:36:07', '2016-03-17 16:36:07'),
 (9, 44, 19, 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.', '2016-03-17 16:37:53', '2016-03-17 16:37:53'),
 (10, 17, 1, 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum.', '2016-03-17 16:40:56', '2016-03-17 16:40:56'),
-(11, 18, 9, 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium', '2016-03-31 19:41:09', '2016-03-31 19:41:09');
+(11, 18, 9, 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium', '2016-03-31 19:41:09', '2016-03-31 19:41:09'),
+(12, 1, 2, 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.', '2016-05-02 16:08:27', '2016-05-02 16:08:27'),
+(13, 1, 10, 'Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.', '2016-05-05 16:36:54', '2016-05-05 16:36:54');
 
 -- --------------------------------------------------------
 
@@ -128,7 +130,7 @@ CREATE TABLE IF NOT EXISTS `image` (
   `updated_at` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   PRIMARY KEY (`id`),
   KEY `fk_1_image` (`user_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=43 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=46 ;
 
 --
 -- Dumping data for table `image`
@@ -168,7 +170,10 @@ INSERT INTO `image` (`id`, `user_id`, `name`, `type`, `size`, `width`, `height`,
 (38, 44, '4ff12579796a357d39c688b92ea4ce8772814589.jpg', 'image/jpeg', 113250, 850, 553, 'Lorem Ipsum', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.', '2016-04-06 19:19:29', '2016-04-06 19:19:29'),
 (40, 44, '828131e13894fd670dc02b6df04bf37ea32777d1.jpg', 'image/jpeg', 100510, 1000, 635, 'Lorem Ipsum', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.', '2016-04-06 19:24:30', '2016-04-06 19:24:30'),
 (41, 44, '18a2df5d28b4694ad68ce68a1cdd91930b067ce5.jpg', 'image/jpeg', 40331, 800, 533, 'Lorem Ipsum', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet.', '2016-04-06 19:44:27', '2016-04-06 19:44:27'),
-(42, 44, '9c392ca8e50a0d9463a9cc5d8ecfc2368b765911.jpg', 'image/jpeg', 341162, 1920, 1200, 'Lorem Ipsum', 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.', '2016-04-26 18:16:52', '2016-04-26 18:16:52');
+(42, 44, '9c392ca8e50a0d9463a9cc5d8ecfc2368b765911.jpg', 'image/jpeg', 341162, 1920, 1200, 'Lorem Ipsum', 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.', '2016-04-26 18:16:52', '2016-04-26 18:16:52'),
+(43, 1, '503da020bfd1b1a85723a14643dbf1d9fb3ff34e.jpg', 'image/jpeg', 334474, 1920, 1200, 'Lorem Ipsum', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.', '2016-05-02 16:10:12', '2016-05-02 16:10:12'),
+(44, 1, '5db96725919f2730befbfa394129806dae8e84a5.jpg', 'image/jpeg', 291823, 1920, 1080, 'Lorem Ipsum', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.', '2016-05-05 16:17:00', '2016-05-05 16:17:00'),
+(45, 1, '803fad43297959e8e1d2e6136eadd42004f1d85c.jpg', 'image/jpeg', 531381, 1920, 1200, 'Lorem Ipsum', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.', '2016-05-05 16:21:10', '2016-05-05 16:21:10');
 
 -- --------------------------------------------------------
 
@@ -210,18 +215,21 @@ INSERT INTO `image_category` (`image_id`, `cat_id`) VALUES
 (25, 3),
 (26, 3),
 (27, 3),
+(44, 3),
 (8, 4),
 (9, 4),
 (10, 4),
 (11, 4),
 (12, 4),
+(45, 4),
 (31, 9),
 (34, 9),
 (35, 9),
 (38, 9),
 (40, 9),
 (41, 9),
-(42, 9);
+(42, 9),
+(43, 10);
 
 -- --------------------------------------------------------
 
@@ -300,11 +308,11 @@ CREATE TABLE IF NOT EXISTS `user` (
 --
 
 INSERT INTO `user` (`id`, `email`, `username`, `password`, `first_name`, `last_name`, `gender`, `city`, `state`, `country`, `is_active`, `role`, `cover_image`, `profile_image`, `about`, `created_at`, `updated_at`) VALUES
-(1, 'john.d@example.com', 'Johnny', '$2y$10$xj3FwCwSTZx.OTgtD25p5.Zf38vnY2Q2o0gx/Z834FYHNjPdI.hdq', 'John', 'Doe', 'male', 'Los Angeles', 'California', 'United States', NULL, 'user', NULL, 'johnny.jpg', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.', '2016-01-13 21:34:55', '2016-03-18 18:40:09'),
+(1, 'john.d@example.com', 'Johnny', '$2y$10$xj3FwCwSTZx.OTgtD25p5.Zf38vnY2Q2o0gx/Z834FYHNjPdI.hdq', 'John', 'Doe', 'male', 'Los Angeles', 'California', 'United States', NULL, 'user', NULL, 'johnny.jpg', 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.', '2016-01-13 21:34:55', '2016-05-02 16:07:41'),
 (7, 'alex.b@example.com', 'Alex', '$2y$10$Hloitw2z68Z.cjj6PojM5OEXwbj5ryj3CeAt3oSn6jO1HOR2jpUki', NULL, NULL, 'male', NULL, NULL, NULL, NULL, 'user', NULL, NULL, NULL, '2016-01-20 20:51:51', '2016-02-05 19:09:47'),
 (8, 'rachel.n@example.com', 'Rachel', '$2y$10$kB73M/ss/8V7vliYCIRuj.IEtv9dClT3ah4lPafrL/PU223Q8Y4Yu', NULL, NULL, 'female', NULL, NULL, 'England', NULL, 'user', NULL, NULL, NULL, '2016-01-20 20:53:44', '2016-03-18 19:06:40'),
 (9, 'marcus.d@example.com', 'Marc', '$2y$10$tUTySVowpcmUzltu3w/2i.Rt.bkXS34xX1isVl2doVhxHz0Oltdqa', NULL, NULL, 'male', NULL, NULL, NULL, NULL, 'user', NULL, NULL, NULL, '2016-01-20 21:28:39', '2016-02-05 19:09:47'),
-(13, 'marie.m@example.com', 'Marie', '$2y$10$l.HMPiSg/8jCIG6bya9y/u1lE7KJ1SaKm1LtY/jwWPUqPC5vKHnS6', NULL, NULL, 'female', NULL, 'Alabama', NULL, NULL, 'user', NULL, NULL, NULL, '2016-01-21 09:25:12', '2016-03-18 19:05:35'),
+(13, 'marie.m@example.com', 'Marie', '$2y$10$l.HMPiSg/8jCIG6bya9y/u1lE7KJ1SaKm1LtY/jwWPUqPC5vKHnS6', 'Marie', 'Walsh', 'female', 'New York', 'New York', 'United States', NULL, 'user', NULL, '418cc23090e7e4039455414ffee29c2fb8fa1c41.jpg', NULL, '2016-01-21 09:25:12', '2016-05-02 16:35:46'),
 (14, 'miriam.s@example.com', 'Miriam', '$2y$10$Nn3p896QehGpcwM2zF0S4OXHV2jCUatt8bJAvKfzcScitqpct/ZKC', NULL, NULL, 'female', NULL, NULL, NULL, NULL, 'user', NULL, NULL, NULL, '2016-01-21 09:28:46', '2016-01-21 09:28:46'),
 (15, 'tommy.e@example.com', 'Tommy', '$2y$10$wk4Tyb9RjcMplzRVN3md/e/9kgKumXzSADanjFRdWi/whYb2NLStG', NULL, NULL, 'male', NULL, NULL, NULL, NULL, 'user', NULL, NULL, NULL, '2016-01-24 18:40:59', '2016-02-05 19:09:47'),
 (16, 'herminia.a@example.com', 'Herminia', '$2y$10$wV76XCz8jMN7FK3oIO1u6ef351rfqQDboGoxtiilpIAXaivE/o3tG', NULL, NULL, 'female', NULL, NULL, NULL, NULL, 'user', NULL, NULL, NULL, '2016-01-25 18:05:35', '2016-01-25 18:05:35'),
