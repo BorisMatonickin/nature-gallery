@@ -2,6 +2,7 @@
         <div class="grid_2"> 
             <ul id="footer-links">
                     <li><a href="/">Home</a></li>
+	        <li><a href="/categories">Categories</a></li>
                 <?php if ($session->isUserLoggedIn() === true): ?>
                     <?php $userInfo = $session->get('user'); ?>
                     <li><a href="/profile/view/<?= $userInfo['userId']; ?>">Profile</a></li>

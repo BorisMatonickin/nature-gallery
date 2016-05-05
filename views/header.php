@@ -15,6 +15,7 @@
                 <nav class="top-nav">
                     <ul class="nav nav-pills pull-right">
                             <li role="presentation" class="active"><a href="/">Home</a></li>
+		    <li role="presentation"><a href="/categories">Categories</a></li>
                         <?php if ($session->isUserLoggedIn() === true): ?>
                             <?php $userInfo = $session->get('user'); ?>
                             <li role="presentation"><a href="/profile/view/<?= $userInfo['userId']; ?>">Profile</a></li>
